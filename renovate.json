@@ -3,10 +3,9 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": "(^|/)(workflow-templates|\\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\\.ya?ml$",
-      "matchStrings": ["image: alpine:(?<currentValue>.*?)\\n"],
-      "datasourceTemplate": "docker",
-      "depNameTemplate": "alpine"
+      "fileMatch": "\\.github/workflows/.+\\.ya?ml$",
+      "matchStrings": ["image: (?<depName>.*?):(?<currentValue>.*?)\\n"],
+      "datasourceTemplate": "docker"
     }
   ]
 }
