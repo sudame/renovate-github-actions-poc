@@ -5,7 +5,7 @@
       "customType": "regex",
       "fileMatch": "\\.github/workflows/.+\\.ya?ml$",
       "matchStrings": [
-        "image: cypress\\/browsers:node-(?<currentValue>.*?)-.*\\n"
+        "image: cypress\\/browsers:.*chrome-(?<currentValue>.*?)-.*\\n"
       ],
       "datasourceTemplate": "docker",
       "depNameTemplate": "cypress/browsers"
