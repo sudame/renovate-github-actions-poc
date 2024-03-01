@@ -7,6 +7,6 @@ jobs:
   demo:
     runs-on: ubuntu-latest
     container:
-      image: alpine:3.16
+      image: alpine:3.19
     steps:
       - run: echo "Hello, world!"
