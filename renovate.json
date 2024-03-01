@@ -5,10 +5,11 @@
       "customType": "regex",
       "fileMatch": "\\.github/workflows/.+\\.ya?ml$",
       "matchStrings": [
-        "image: cypress\\/browsers:.*chrome-(?<currentValue>.*?)-.*\\n"
+        "image: cypress\\/browsers:(?<currentValue>.*chrome-(?<extractVersion>.*?)-ff.*?)\\n"
       ],
       "datasourceTemplate": "docker",
-      "depNameTemplate": "cypress/browsers"
+      "depNameTemplate": "cypress/browsers",
+      "versioningTemplate": ""
     }
   ]
 }
