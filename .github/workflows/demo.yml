@@ -1,0 +1,12 @@
+name: demo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    container:
+      image: alpine:3.16
+    steps:
+      - run: echo "Hello, world!"

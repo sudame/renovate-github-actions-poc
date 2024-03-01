@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": "(^|/)(workflow-templates|\\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\\.ya?ml$",
+      "matchStrings": ["image: alpine:(?<currentValue>.*?)\\n"],
+      "datasourceTemplate": "docker",
+      "depNameTemplate": "alpine"
+    }
+  ]
+}
