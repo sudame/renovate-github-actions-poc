@@ -7,6 +7,6 @@ jobs:
   demo:
     runs-on: ubuntu-latest
     container:
-      image: cypress/browsers:node-16.18.1-chrome-107.0.5304.121-1-ff-107.0-edge-100.0.1185.29-1
+      image: cypress/browsers:node-22.16.0-chrome-136.0.7103.113-1-ff-139.0.1-edge-136.0.3240.76-1
     steps:
       - run: echo "Hello, world!"
